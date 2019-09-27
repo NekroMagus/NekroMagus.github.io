@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     overflow-x: hidden;
 }
@@ -285,7 +290,7 @@ footer {
     align-items: center;
     justify-content: center;
     transition: 0.3s;
-    transform: translateX(600%);
+    transform: translateX(700%);
 }
 
 .menu_active {
@@ -350,9 +355,25 @@ footer {
 
 .main-menu {
     margin: 30px;
-    font-weight: 600;
 }
 
 .navbar-brand {
     color: white;
+}
+@media screen and (min-width:850px){
+    .li{
+        display: block; !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .directions {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+.directions-mobile {
+    display: none;
+}
 }
