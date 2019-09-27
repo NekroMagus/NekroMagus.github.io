@@ -45,8 +45,7 @@
 <!--    </div>-->
 <!--</nav>-->
 
-<a id="image" class="menu-btn"><img class="menu-img" src="designtime/img/new/bar.png" onClick="imgsrc()"/></a>
-
+<a id="image" class="menu-btn"><img class="menu-img" src="designtime/img/new/bar.png"/></a>
 
 
 <div class="menu">
@@ -135,6 +134,67 @@
         </div>
     </div>
 </section>
+
+<section class="directions-mobile">
+    <a name="directions"></a>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12">
+                <h1>Направления DesignTime!</h1>
+            </div>
+            <div class="col-sm-6">
+                <h3>По 4 направлениям хакатона нашими партнерами формируются задачи, которые нужно реализовать в течение
+                    24 часов. Каждая категория Имеет свои призовые места.</h3>
+            </div>
+
+        </div>
+        <div class="row align-items-center marg">
+            <div class="col-lg-5 col-md-12">
+                <img class="links" src="designtime/img/new/wd.png"/>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <h2>Web</h2>
+                <p class="number">Не выносишь ужасного UI, когда заходишь на сайты? Давай перевернем индустрию
+                    Web-дизайна! Приходи и займи призовое место за действительно крутой сайт для нашего партнера!</p>
+            </div>
+
+        </div>
+        <div class="row align-items-center marg">
+            <div class="col-lg-5 col-md-12 marg">
+                <hr class="hrblock">
+                <img class="links link-mobile" src="designtime/img/new/ui.png"/>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <h2>Mobile</h2>
+                <p class="number">Считаешь себя гуру UI/UX? Давай проверим на что ты способен! Подавай заявку и
+                    докажи, что ты лучший!</p>
+            </div>
+        </div>
+        <div class="row align-items-center marg">
+            <div class="col-lg-5 col-md-12">
+                <img class="links" src="designtime/img/new/md.png"/>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <h2>Motion</h2>
+                <p class="number">Разработай лучший ролик вместе с маркетологами нашего партнера и получи звание
+                    лучшего
+                    Motion-дизайнера этой осени!</p>
+            </div>
+        </div>
+        <div class="row align-items-center marg">
+            <div class="col-lg-5 col-md-12">
+                <img class="links" src="designtime/img/new/gd.png"/>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <h2>Graphic</h2>
+                <p class="number">Смотря на оформления крупных компаний, считаешь их дизайнеров халтурщиками?
+                    Регистрируйся и докажи, что можешь лучше! </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
 
 <div class="container">
     <hr>
@@ -247,7 +307,7 @@
 
 
 <nav class="button-up"><a href="#"><img src="designtime/img/up_button.png"/></a></nav>
-    
+
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -258,17 +318,5 @@
 <script src="https://use.fontawesome.com/96928ca8ce.js"></script>
 <script src="designtime/js/scroll-header.js"></script>
 
-<script>
-    var i=0;
-    var image=document.getElementById("image");
-    var imgs=new Array('../img/new/bar.png', '../img/new/barw.png');
-    var j=imgs.length;
-    function imgsrc(){
-        if (i!=(j-1))
-        {i++;}
-
-        image.src=imgs[i];
-    }
-</script>
 </body>
 </html>
