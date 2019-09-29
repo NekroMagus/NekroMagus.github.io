@@ -1,4 +1,4 @@
-$('.menu-btn').on('click', function(e) {
+$('.menu-btn').on('click', function (e) {
     e.preventDefault();
     $('.menu').toggleClass('menu_active');
     $('.menu').toggleClass('content_active');
@@ -14,6 +14,19 @@ $(window).scroll(function () {
     }
 });
 
-$(document).ready(function() {
-   $(".menu-btn").hide();
+$(document).ready(function () {
+    $(".menu-btn").hide();
 });
+
+let i = 0;
+let array = ['img/bm.png', 'img/bmw.png'];
+
+function changeNav() {
+
+    if (i !== array.length - 1) {
+        i++;
+    } else {
+        i = 0;
+    }
+    document.getElementById('imagine').src = array[i];
+}
