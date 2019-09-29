@@ -1,53 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="description" content="">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sniglet&display=swap" rel="stylesheet">
-    <link href="designtime/img/new/16746.otf">
-    <link rel="stylesheet" href="designtime/css/design-style.css"/>
-    <title>Design Time</title>
+    <link href="fonts/16746.otf"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>DesignTime</title>
 </head>
 <body>
 
-<!--<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">-->
-<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"-->
-<!--            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--        <span class="navbar-toggler-icon"></span>-->
-<!--    </button>-->
-
-<!--    <div class="collapse navbar-collapse ml-auto text-center justify-content-center align-items-center " id="navbarsExampleDefault">-->
-<!--       <span>-->
-<!--           <img class="nav&#45;&#45;logo " src="../img/thelast.png" alt=""/>-->
-<!--           <img class="nav&#45;&#45;logo2" src="../img/thelast.png" alt=""/>-->
-<!--       </span>-->
-
-<!--        <ul class="navbar-nav ml-auto text-center justify-content-center align-items-center w-100">-->
-<!--            <li class="nav-item active">-->
-<!--                <a class="nav-link web" href="#directions">Направления <span class="sr-only">(current)</span></a>-->
-<!--            </li>-->
-<!--            <li class="nav-item active">-->
-<!--                <a class="nav-link web" href="#date-hack">Когда и где</a>-->
-<!--            </li>-->
-<!--            <li class="nav-item active">-->
-<!--                <a class="nav-link web" href="#registration">Регистрация</a>-->
-<!--            </li>-->
-<!--            <li class="nav-item active">-->
-<!--                <a class="nav-link" href="#partners">Партнеры</a>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--</nav>-->
-
-<a id="image" class="menu-btn"><img class="menu-img" src="designtime/img/new/bar.png"/></a>
-
-
+<a id="image" class="menu-btn">
+    <img class="menu-img" src="img/bar.png" alt="nav"/>
+</a>
 <div class="menu">
     <nav class="menu-list">
         <a class="menu-right" href="#directions">Направления</a>
@@ -58,191 +27,127 @@
     </nav>
 </div>
 
-<section class="header">
-    <nav class="navbar navbar-expand">
-        <div class="row">
-            <div class="main-menu">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item navbar-nav"><a href="#" class="navbar-brand">Главная</a></li>
-                    <li class="nav-item navbar-nav"><a href="#footer" class="navbar-brand">Контакты</a></li>
-                    <li class="nav-item navbar-nav"><a href="#directions" class="navbar-brand">Направления</a></li>
-                    <li class="nav-item navbar-nav"><a href="#registration" class="navbar-brand">Регистрация</a></li>
-                    <li class="nav-item navbar-nav"><a href="#partners" class="navbar-brand">Партнеры</a></li>
-                </ul>
-            </div>
+<header>
+    <nav class="navbar navbar-expand-md mb-4">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#directions">Направления</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#registration">Регистрация</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#partners">Партнеры</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <div class="row justify-content-center">
-        <img class=" menu-logo" src="designtime/img/new/designtimelogo.png"/>
-    </div>
-</section>
+    <img class="header-logo" src="img/designtimelogo.png"/>
+</header>
+
 
 <section class="directions">
     <a name="directions"></a>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-12">
-                <h1>Направления DesignTime!</h1>
+                <p class="heading">Направления DesignTime!</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-lg-8 col-sm-6">
                 <h3>По 4 направлениям хакатона нашими партнерами формируются задачи, которые нужно реализовать в течение
                     24 часов. Каждая категория Имеет свои призовые места.</h3>
             </div>
 
         </div>
-        <div class="row align-items-center marg">
-            <div class="col-lg-5 col-md-12">
-                <img class="links" src="designtime/img/new/wd.png"/>
+
+        <div class="row align-items-center margin">
+            <div class="col-lg-5 col-sm-12 order-sm-first">
+                <img class="links" src="img/wd.png"/>
             </div>
-            <div class="col-lg-7 col-md-12">
-                <h2>Web</h2>
-                <p class="number">Не выносишь ужасного UI, когда заходишь на сайты? Давай перевернем индустрию
+            <div class="col-lg-7 col-sm-12 order-sm-last">
+                <p class="heading-direct">Web</p>
+                <p class="text-dir">Не выносишь ужасного UI, когда заходишь на сайты? Давай перевернем индустрию
                     Web-дизайна! Приходи и займи призовое место за действительно крутой сайт для нашего партнера!</p>
             </div>
-            <div class="row align-items-center marg">
-                <div class="col-lg-7 col-md-12">
-                    <h2>Mobile</h2>
-                    <p class="number">Считаешь себя гуру UI/UX? Давай проверим на что ты способен! Подавай заявку и
-                        докажи, что ты лучший!</p>
-                </div>
-                <div class="col-lg-5 col-md-12 marg">
-                    <hr class="hrblock">
-                    <img class="links link-mobile" src="designtime/img/new/ui.png"/>
-                </div>
+        </div>
+
+        <div class="row align-items-center margin">
+            <div class="col-lg-5 order-lg-last col-sm-12 order-sm-first">
+                <img class="links link-mobile" src="img/ui.png"/>
             </div>
-            <div class="row align-items-center marg">
-                <div class="col-lg-5 col-md-12">
-                    <img class="links" src="designtime/img/new/md.png"/>
-                </div>
-                <div class="col-lg-7 col-md-12">
-                    <h2>Motion</h2>
-                    <p class="number">Разработай лучший ролик вместе с маркетологами нашего партнера и получи звание
-                        лучшего
-                        Motion-дизайнера этой осени!</p>
-                </div>
+            <div class="col-lg-7 order-lg-first col-sm-12 order-sm-last">
+                <p class="heading-direct">Mobile</p>
+                <p class="text-dir">Считаешь себя гуру UI/UX? Давай проверим на что ты способен! Подавай заявку и
+                    докажи, что ты лучший!</p>
             </div>
-            <div class="row align-items-center marg">
-                <div class="col-lg-7 col-md-12">
-                    <h2>Graphic</h2>
-                    <p class="number">Смотря на оформления крупных компаний, считаешь их дизайнеров халтурщиками?
-                        Регистрируйся и докажи, что можешь лучше! </p>
-                </div>
-                <div class="col-lg-5 col-md-12">
-                    <img class="links" src="designtime/img/new/gd.png"/>
-                </div>
+        </div>
+
+        <div class="row align-items-center margin">
+            <div class="col-lg-5 col-sm-12">
+                <img class="links" src="img/md.png"/>
+            </div>
+            <div class="col-lg-7 col-sm-12">
+                <p class="heading-direct">Motion</p>
+                <p class="text-dir">Разработай лучший ролик вместе с маркетологами нашего партнера и получи звание
+                    лучшего
+                    Motion-дизайнера этой осени!</p>
+            </div>
+        </div>
+
+        <div class="row  align-items-center margin">
+            <div class="col-lg-5 order-lg-last col-sm-12">
+                <img class="links" src="img/gd.png"/>
+            </div>
+            <div class="col-lg-7 order-lg-first col-sm-12">
+                <p class="heading-direct">Graphic</p>
+                <p class="text-dir">Смотря на оформления крупных компаний, считаешь их дизайнеров халтурщиками?
+                    Регистрируйся и докажи, что можешь лучше! </p>
             </div>
         </div>
     </div>
 </section>
 
-<!--<section class="directions-mobile">-->
-<!--    <a name="directions"></a>-->
-<!--    <div class="container">-->
-<!--        <div class="row justify-content-center">-->
-<!--            <div class="col-sm-12">-->
-<!--                <h1>Направления DesignTime!</h1>-->
-<!--            </div>-->
-<!--            <div class="col-sm-6">-->
-<!--                <h3>По 4 направлениям хакатона нашими партнерами формируются задачи, которые нужно реализовать в течение-->
-<!--                    24 часов. Каждая категория Имеет свои призовые места.</h3>-->
-<!--            </div>-->
-
-<!--        </div>-->
-<!--        <div class="row align-items-center marg">-->
-<!--            <div class="col-lg-5 col-md-12">-->
-<!--                <img class="links" src="designtime/img/new/wd.png"/>-->
-<!--            </div>-->
-<!--            <div class="col-lg-7 col-md-12">-->
-<!--                <h2>Web</h2>-->
-<!--                <p class="number">Не выносишь ужасного UI, когда заходишь на сайты? Давай перевернем индустрию-->
-<!--                    Web-дизайна! Приходи и займи призовое место за действительно крутой сайт для нашего партнера!</p>-->
-<!--            </div>-->
-
-<!--        </div>-->
-<!--        <div class="row align-items-center marg">-->
-<!--            <div class="col-lg-5 col-md-12 marg">-->
-<!--                <hr class="hrblock">-->
-<!--                <img class="links link-mobile" src="designtime/img/new/ui.png"/>-->
-<!--            </div>-->
-<!--            <div class="col-lg-7 col-md-12">-->
-<!--                <h2>Mobile</h2>-->
-<!--                <p class="number">Считаешь себя гуру UI/UX? Давай проверим на что ты способен! Подавай заявку и-->
-<!--                    докажи, что ты лучший!</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row align-items-center marg">-->
-<!--            <div class="col-lg-5 col-md-12">-->
-<!--                <img class="links" src="designtime/img/new/md.png"/>-->
-<!--            </div>-->
-<!--            <div class="col-lg-7 col-md-12">-->
-<!--                <h2>Motion</h2>-->
-<!--                <p class="number">Разработай лучший ролик вместе с маркетологами нашего партнера и получи звание-->
-<!--                    лучшего-->
-<!--                    Motion-дизайнера этой осени!</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row align-items-center marg">-->
-<!--            <div class="col-lg-5 col-md-12">-->
-<!--                <img class="links" src="designtime/img/new/gd.png"/>-->
-<!--            </div>-->
-<!--            <div class="col-lg-7 col-md-12">-->
-<!--                <h2>Graphic</h2>-->
-<!--                <p class="number">Смотря на оформления крупных компаний, считаешь их дизайнеров халтурщиками?-->
-<!--                    Регистрируйся и докажи, что можешь лучше! </p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    </div>-->
-<!--</section>-->
-
-
 <div class="container">
     <hr>
 </div>
+
 
 <section class="date--hack">
     <a name="date-hack"></a>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
-                <h1>Когда и где</h1>
-                <p>16-17 Ноября</p>
-                <h3>В течение 24 часов Вам предстоит бороться за призовые места</h3>
-                <h3>Место проведения тщательно уточняется</h3>
+                <p class="heading">Когда и где</p>
+                <p class="text">16-17 Ноября</p>
+                <p class="text">В течение 24 часов Вам предстоит бороться за призовые места</p>
+                <p class="text">Место проведения тщательно уточняется</p>
             </div>
         </div>
     </div>
 </section>
 
-<!--<section class="location">-->
-<!--    <a name="location"></a>-->
-<!--    <div class="container">-->
-<!--        <div class="row justify-content-center">-->
-<!--            <div class="col-md-12">-->
-<!--                <p>Место проведения тщательно уточняется, а пока, вот пече... миникарта)</p>-->
-<!--                <iframe class="mini-map"-->
-<!--                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8980.806158459063!2d37.6182683!3d55.7550011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1569164822771!5m2!1sru!2sru"-->
-<!--                        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>-->
-<!--                <iframe class="big-map"-->
-<!--                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6263.823561863622!2d37.6182683205156!3d55.75500109502187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1569158970169!5m2!1sru!2sru"-->
-<!--                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
 <div class="container">
     <hr>
 </div>
 
+
 <section class="registration">
     <a name="registration"></a>
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row">
             <div class="col-md-12">
-                <h1>Регистрация</h1>
-                <h3>Только первые 200 участников могут зарегистрироваться на хакатон. Успей войти в это
-                    число</h3>
+                <p class="heading">Регистрация</p>
+                <p class="text">Только первые 200 участников могут зарегистрироваться на хакатон. Успей войти в это
+                    число</p>
+            </div>
+            <div class="col-md-12 offset-md-5">
                 <a href="#" class="btn form-button">Стать участником</a>
             </div>
         </div>
@@ -256,27 +161,7 @@
 <section class="partners">
     <a name="partners"></a>
     <div class="container">
-        <h1>Наши партнеры</h1>
-        <!--        <div class="row justify-content-center">-->
-        <!--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners&#45;&#45;img">-->
-        <!--                <img src="../img/partners/1.png"/>-->
-        <!--            </div>-->
-        <!--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners&#45;&#45;img">-->
-        <!--                <img src="../img/partners/2.png"/>-->
-        <!--            </div>-->
-        <!--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners&#45;&#45;img">-->
-        <!--                <img src="../img/partners/3.jpg"/>-->
-        <!--            </div>-->
-        <!--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners&#45;&#45;img">-->
-        <!--                <img src="../img/partners/4.png"/>-->
-        <!--            </div>-->
-        <!--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners&#45;&#45;img">-->
-        <!--                <img src="../img/partners/5.jpg"/>-->
-        <!--            </div>-->
-        <!--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 partners&#45;&#45;img">-->
-        <!--                <img src="../img/partners/6.png"/>-->
-        <!--            </div>-->
-        <!--        </div>-->
+        <p class="heading">Наши партнеры</p>
     </div>
 </section>
 
@@ -286,37 +171,41 @@
 
 <a name="footer"></a>
 <footer>
-    <div class="footer--logo">
-        <a href="#"><img class="footer--logo--img" src="designtime/img/thelast.png" alt=""/></a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="footer--logo">
+                <a href="#"><img class="footer--logo--img" src="img/thelast.png" alt=""/></a>
+            </div>
 
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <p>Контакты:</p>
-            <p>info@designtime.tech</p>
-            <p> +79633265037</p>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                <p class="f-text">
+                    Информация для партнеров:<br>
+                    partner@designtime.tech<br>
+                    +7 (963) 326 50-37
+                </p>
+            </div>
+            <div class="footer-icon">
+                <img src="img/vk.png" alt="vk">
+                <img src="img/inst.png" alt="instagram">
+                <img src="img/teleg.png" alt="telegram">
+                <img src="img/facebook.png" alt="facebook">
+            </div>
         </div>
 
     </div>
-    <div class="footer--navbar--social ">
-        <a href="#"><i class="fa fa-vk navbar--social--icon" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-facebook-official navbar--social--icon" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-instagram navbar--social--icon" aria-hidden="true"></i></a>
-    </div>
 </footer>
 
+<nav class="button-up"><a href="#"><img src="img/up_button.png"/></a></nav>
 
-<nav class="button-up"><a href="#"><img src="designtime/img/up_button.png"/></a></nav>
-
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-<script src="https://use.fontawesome.com/96928ca8ce.js"></script>
-<script src="designtime/js/scroll-header.js"></script>
-
+<script src="js/nav-menu.js"></script>
 </body>
 </html>
