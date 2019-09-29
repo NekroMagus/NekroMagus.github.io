@@ -13,3 +13,7 @@ $(window).scroll(function () {
         $(".menu-btn").hide();
     }
 });
+
+$(document).ready(function() {
+   $(".menu-btn").hide();
+});
