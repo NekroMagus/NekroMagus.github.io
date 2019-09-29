@@ -178,8 +178,12 @@ hr {
     transform: translateX(400%);
 }
 
-@media screen and (min-width: 576px) {
-
+@media screen and (max-width: 662px) {
+    .menu_active {
+        transition: 0.4s;
+        width:40%;
+        transform: translateX(150%);
+    }
 }
 
 .menu-img {
@@ -196,6 +200,7 @@ hr {
     right: 5%;
     top: 5%;
 }
+
 .menu-btn2 {
     cursor: pointer;
     z-index: 999;
