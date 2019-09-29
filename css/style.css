@@ -174,13 +174,13 @@ hr {
 }
 
 .menu_active {
-    transition: 0.4s;
+    transition: 0.2s;
     transform: translateX(400%);
 }
 
 @media screen and (max-width: 662px) {
     .menu_active {
-        transition: 0.4s;
+        transition: 0.2s;
         width:40%;
         transform: translateX(150%);
     }
