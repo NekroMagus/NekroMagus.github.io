@@ -16,9 +16,25 @@ header {
 }
 
 .nav-item > a {
-    font-size: 2vw;
+    font-size: 30px;
     font-weight: 500;
     color: white;
+}
+
+@media screen and (max-width: 849px) {
+    .nav-item > a {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav-item > a {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .nav-item > a {
+        font-size: 8px;
+    }
 }
 
 .nav-separator {
@@ -172,6 +188,15 @@ hr {
 }
 
 .menu-btn {
+    cursor: pointer;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 5%;
+    top: 5%;
+}
+.menu-btn2 {
     cursor: pointer;
     z-index: 999;
     width: 50px;
