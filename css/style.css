@@ -27,21 +27,22 @@ header {
 @media screen and (max-width: 576px) {
     .header-logo {
         width: 80vh;
-        height:100vh;
+        height: 100vh;
     }
 }
 
 @media screen and (max-width: 440px) {
     .header-logo {
         width: 60vh;
-        height:80vh;
+        height: 80vh;
     }
+
     header {
         height: 100vh;
     }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
     .navbar {
         display: none;
     }
@@ -53,16 +54,18 @@ header {
     color: white;
 }
 
-@media screen and (min-width:850px) {
+@media screen and (min-width: 850px) {
     .nav-item > a {
         font-size: 3vh;
     }
 }
+
 @media screen and (max-width: 849px) {
     .nav-item > a {
         font-size: 15px;
     }
 }
+
 @media screen and (max-width: 677px) {
     .nav-item > a {
         font-size: 10px;
@@ -96,7 +99,7 @@ header {
 }
 
 .heading-direct {
-    color: rgb(118,35,167);
+    color: rgb(118, 35, 167);
     font-size: 80px;
 }
 
@@ -117,8 +120,21 @@ p {
     p {
         font-size: 7vw;
     }
+
     .heading {
-        font-size: 14vw;
+        font-size: 10vw;
+    }
+    .text-dir {
+        font-size: 6vw;
+    }
+    .text {
+        font-size: 6vw;
+    }
+    .heading-direct {
+        font-size: 10vw;
+    }
+    h3 {
+        font-size: 6vw;
     }
 }
 
@@ -153,7 +169,7 @@ hr {
 
 .regaw {
     display: block;
-    margin:auto;
+    margin: auto;
     text-align: center;
 }
 
@@ -181,7 +197,7 @@ hr {
 @media screen and (max-width: 662px) {
     .menu_active {
         transition: 0.2s;
-        width:40%;
+        width: 40%;
         transform: translateX(150%);
     }
 }
@@ -212,7 +228,7 @@ hr {
 }
 
 .menu-right {
-    color:white;
+    color: white;
     font-weight: 600;
     padding: 0 5px 0 5px;
     margin: 5px;
@@ -246,7 +262,7 @@ footer {
     width: 104px;
 }
 
-@media screen and (max-width: 575px){
+@media screen and (max-width: 575px) {
     footer {
         display: block;
         margin: auto;
@@ -263,7 +279,7 @@ footer {
 
 .f-text {
     padding: 0;
-    margin:20px 15px 0 5px;
+    margin: 20px 15px 0 5px;
     font-size: 2.5vh;
     color: white;
 }
@@ -292,23 +308,22 @@ footer {
 }
 
 
-
 .footer-icon {
-    position:absolute;
-    right:150px;
-    padding-top:25px;
+    position: absolute;
+    right: 150px;
+    padding-top: 25px;
     padding-left: 35%;
 }
 
 @media screen and (max-width: 1072px) {
     .footer-icon {
-        right:100px;
+        right: 100px;
     }
 }
 
 @media screen and (max-width: 940px) {
     .footer-icon {
-        right:90px;
+        right: 90px;
     }
 }
 
@@ -333,8 +348,10 @@ footer {
 }
 
 .bg-dark {
-    background: rgba(0,0,0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
 }
+
 .nav-link {
     color: white !important;
 }
+
