@@ -12,8 +12,25 @@ h4 {
 
 header {
     background: url("../img/bg.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: 100vw 100vh;
 }
+
+.header-logo {
+    display: block;
+    margin: auto;
+    text-align: center;
+    height: 90vh;
+    width: 40vw;
+}
+
+
+@media screen and (max-width: 900px) {
+    .header-logo {
+        width: 60%;
+        height:60%;
+    }
+}
+
 
 .nav-item > a {
     font-size: 30px;
@@ -41,38 +58,6 @@ header {
     border-right: 1px solid white;
 }
 
-.header-logo {
-    display: block;
-    margin: auto;
-    text-align: center;
-    height: 700px;
-    width: 700px;
-}
-
-@media screen and (min-width: 1366px) {
-    header {
-        height: 850px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .header-logo {
-
-        width: 90%;
-        height:90%;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    header {
-        height: 500px;
-    }
-}
-@media screen and (max-width: 380px) {
-    header {
-        height: 350px;
-    }
-}
 .button-up {
     position: fixed;
     bottom: 5%;
