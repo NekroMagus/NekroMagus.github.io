@@ -24,13 +24,22 @@ header {
 }
 
 
-/*@media screen and (max-width: 900px) {*/
-/*    .header-logo {*/
-/*        width: 60%;*/
-/*        height:60%;*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 576px) {
+    .header-logo {
+        width: 80vh;
+        height:100vh;
+    }
+}
 
+@media screen and (max-width: 440px) {
+    .header-logo {
+        width: 60vh;
+        height:80vh;
+    }
+    header {
+        height: 100vh;
+    }
+}
 
 .nav-item > a {
     font-size: 30px;
@@ -43,18 +52,24 @@ header {
         font-size: 20px;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 677px) {
     .nav-item > a {
-        font-size: 12px;
+        font-size: 15px;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 560px) {
     .nav-item > a {
-        font-size: 8px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 436px) {
+    .nav-item > a {
+        font-size: 5px;
     }
 }
 
 .nav-separator {
+    margin-right: 20px;
     border-right: 1px solid white;
 }
 
