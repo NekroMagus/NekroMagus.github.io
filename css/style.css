@@ -128,15 +128,19 @@ p {
     .heading {
         font-size: 10vw;
     }
+
     .text-dir {
         font-size: 6vw;
     }
+
     .text {
         font-size: 6vw;
     }
+
     .heading-direct {
         font-size: 10vw;
     }
+
     h3 {
         font-size: 6vw;
     }
@@ -207,7 +211,7 @@ hr {
 }
 
 @media screen and (max-width: 575px) {
-    .menu{
+    .menu {
         display: none;
     }
 
@@ -360,15 +364,15 @@ footer {
 }
 
 .icon-f {
-    height:40px;
+    height: 40px;
     width: 40px;
-    margin:10px;
+    margin: 10px;
 }
 
 .icon-vk {
-    height:60px;
+    height: 60px;
     width: 60px;
-    margin:10px;
+    margin: 10px;
 }
 
 
@@ -427,6 +431,7 @@ footer {
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
     }
+
     @-webkit-keyframes fadeInLeft {
         0% {
             opacity: 0;
@@ -460,6 +465,7 @@ footer {
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
     }
+
     @-webkit-keyframes fadeInUp {
         0% {
             opacity: 0;
@@ -486,11 +492,15 @@ footer {
     }
 }
 
-li   {
-    height:40px;
+li {
+    height: 40px;
 }
 
 .nav-link:hover {
-    transform: translate3d(0,-10%, 0) ;
+    transform: translate3d(0, 10%, 0);
     border-bottom: 3px solid white;
+}
+
+.registr {
+    border-bottom: 3px solid orange !important;
 }
