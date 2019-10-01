@@ -375,6 +375,12 @@ footer {
     margin:10px;
 }
 
+.icon-vk {
+    height:60px;
+    width: 60px;
+    margin:10px;
+}
+
 
 @media screen and (min-width: 577px) {
     .mov-left {
@@ -488,4 +494,8 @@ footer {
             transform: none;
         }
     }
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid olive;
 }
