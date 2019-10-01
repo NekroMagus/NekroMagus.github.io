@@ -9,6 +9,8 @@
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="fonts/16746.otf"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <title>DesignTime</title>
 </head>
 <body>
@@ -92,12 +94,17 @@
                     реализовать в течение
                     24 часов. Каждая категория Имеет свои призовые места.</h3>
             </div>
-
         </div>
+
+
 
         <div class="row align-items-center margin">
             <div class="col-lg-5 col-sm-12 order-sm-first">
-                <img class="links" src="img/wd.png"/>
+                <div class="hover3d">
+                    <div class="hover3d-child">
+                        <img class="links" src="img/wd.png"/>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-7 col-sm-12 order-sm-last">
                 <p class="heading-direct">Web</p>
@@ -109,7 +116,11 @@
 
         <div class="row align-items-center margin">
             <div class="col-lg-5 order-lg-last col-sm-12 order-sm-first">
-                <img class="links link-mobile" src="img/ui.png"/>
+                <div class="hover3d">
+                    <div class="hover3d-child">
+                        <img class="links link-mobile" src="img/ui.png"/>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-7 order-lg-first col-sm-12 order-sm-last">
                 <p class="heading-direct">Mobile</p>
@@ -121,7 +132,11 @@
 
         <div class="row align-items-center margin">
             <div class="col-lg-5 col-sm-12">
-                <img class="links" src="img/md.png"/>
+                <div class="hover3d">
+                    <div class="hover3d-child">
+                        <img class="links" src="img/md.png"/>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-7 col-sm-12">
                 <p id="waypoint" class="heading-direct">Motion</p>
@@ -134,7 +149,11 @@
 
         <div class="row  align-items-center margin">
             <div class="col-lg-5 order-lg-last col-sm-12">
-                <img class="links" src="img/gd.png"/>
+                <div class="hover3d">
+                    <div class="hover3d-child">
+                        <img class="links" src="img/gd.png"/>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-7 order-lg-first col-sm-12">
                 <p class="heading-direct">Graphic</p>
@@ -202,6 +221,10 @@
     <hr>
 </div>
 
+<section class="test">
+
+</section>
+
 <a name="footer"></a>
 <footer>
     <div class="container-fluid">
@@ -241,5 +264,12 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 <script src="js/nav-menu.js"></script>
+<script src="js/jquery.hover3d.min.js"></script>
+<script>
+    $(".hover3d").hover3d({
+        selector: ".hover3d-child",
+        invert: true
+    });
+</script>
 </body>
 </html>
