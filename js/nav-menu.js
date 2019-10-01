@@ -5,14 +5,14 @@ $('.menu-btn').on('click', function (e) {
 });
 
 $(window).scroll(function () {
+    let image = document.getElementById('imagine').getAttribute('src');
+    if(image==='img/bmw.png') {
+        return;
+    }
     if ($(document).scrollTop() > 70) {
         $(".menu-btn").show();
         $(".menu-btn2").hide();
     } else {
-        if (document.getElementById("imagine").scr==='img/bmw.png'){
-            alert(123);
-            return;
-        }
         $(".menu-btn2").show();
         $(".menu-btn").hide();
     }
