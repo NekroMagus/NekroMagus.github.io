@@ -19,6 +19,7 @@ h3 {
 header {
     background: url("../img/bg.png") no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .header-logo {
@@ -26,29 +27,62 @@ header {
     margin: auto;
     text-align: center;
     height: 92vh;
-    width: 40vw;
+    width: 50vw;
 }
-
 
 @media screen and (max-width: 576px) {
     .header-logo {
-        width: 80vh;
-        height: 100vh;
+        width: 60vh;
+        height: 90vh;
     }
 }
+
+.navbar {
+    height: 4.4vw;
+}
+
+@media screen and (max-width: 1330px) {
+    .navbar {
+        height: 4.55vw;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .navbar {
+        height: 4.8vw;
+    }
+}
+@media screen and (max-width: 1180px) {
+    .navbar {
+        height: 5vw;
+    }
+}
+@media screen and (max-width: 1070px) {
+    .navbar {
+        height: 5.3vw;
+    }
+}
+@media screen and (max-width: 992px) {
+    .navbar {
+        height: 5.55vw;
+    }
+}
+@media screen and (max-width: 900px) {
+    .navbar {
+        height: 6vw;
+    }
+}
+
+
 
 @media screen and (max-width: 440px) {
     .header-logo {
-        width: 50vh;
-        height: 80vh;
-    }
-
-    header {
-        height: 100vh;
+        width: 40vh;
+        height: 70vh;
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
     .navbar {
         display: none;
     }
@@ -60,15 +94,42 @@ header {
 
 @media screen and (max-width: 849px) {
     .nav-item > a {
-        font-size: 1vw;
+        font-size: 1.7vw;
     }
 }
 
-@media screen and (max-width: 677px) {
-    .nav-item > a {
-        font-size: 1vw;
+
+li {
+    height: 2.9vw;
+}
+
+@media screen and (max-width: 849px) {
+
+    li {
+        height: 4.8vw;
     }
 }
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    transform: translateY(5%);
+    border-bottom: 3px solid white;
+}
+@media screen and (max-width: 849px) {
+    .nav-link:hover {
+        transform: translateY(15%);
+        border-bottom: 2px solid white !important;
+    }
+}
+
+
+
+.registr:hover {
+    border-bottom: 3px solid orange !important;
+}
+
 
 .nav-separator {
     margin-right: 20px;
@@ -113,6 +174,7 @@ p {
 .text-dir {
     text-align: start;
 }
+
 .text-what {
     text-align: center;
     font-size: 20px;
@@ -240,17 +302,14 @@ hr {
 .menu-right {
     color: white;
     font-weight: 600;
-    padding: 0 5px 0 5px;
-    margin: 5px;
+    padding: 15px 65px 0 0;
     width: 100%;
-    text-align: center;
+    text-align: start;
 }
 
 .menu-list {
     display: flex;
-    justify-content: start;
-    align-items: center;
-    height: 50%;
+    height: 80%;
     flex-direction: column;
 }
 
@@ -311,6 +370,7 @@ footer {
     .text-what {
         text-align: start;
     }
+
     .text-dir {
         text-align: center;
     }
@@ -362,10 +422,6 @@ footer {
 
 .bg-dark {
     background: rgba(0, 0, 0, 0.7) !important;
-}
-
-.nav-link {
-    color: white !important;
 }
 
 .icon-f {
@@ -495,17 +551,4 @@ footer {
             transform: none;
         }
     }
-}
-
-li {
-    height: 2.9vw;
-}
-
-.nav-link:hover {
-    transform: translateY(5%);
-    border-bottom: 3px solid white;
-}
-
-.registr {
-    border-bottom: 3px solid orange !important;
 }
