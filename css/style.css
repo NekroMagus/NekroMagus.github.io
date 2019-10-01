@@ -496,6 +496,10 @@ footer {
     }
 }
 
+li   {
+    height:40px;
+}
+
 .nav-link:hover {
-    border-bottom: 3px solid olive;
+    border-bottom: 3px solid coral;
 }
