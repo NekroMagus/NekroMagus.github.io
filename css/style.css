@@ -180,7 +180,7 @@ hr {
 .menu {
     border: 1px solid #990066;
     background: url("../img/sbar.png") no-repeat;
-    background-size: auto 100%;
+    background-size: 20vw 100vh;
     position: fixed;
     left: 0;
     z-index: 99;
