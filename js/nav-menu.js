@@ -39,7 +39,7 @@ $(window).scroll(function (){
     $('.mov-right').each(function (){
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+450) {
+        if (imagePos < topOfWindow+350) {
             $(this).addClass('fadeInRight');
         }
     });
@@ -50,7 +50,7 @@ $(window).scroll(function (){
     $('.mov-left').each(function (){
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+450) {
+        if (imagePos < topOfWindow+350) {
             $(this).addClass('fadeInLeft');
         }
     });
@@ -61,7 +61,7 @@ $(window).scroll(function (){
     $('.mov-up').each(function (){
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+450) {
+        if (imagePos < topOfWindow+350) {
             $(this).addClass('fadeInUp  ');
         }
     });
