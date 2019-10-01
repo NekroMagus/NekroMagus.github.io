@@ -126,8 +126,13 @@ li {
 
 
 
-.registr:hover {
+.registr {
+    padding-bottom: 11px;
     border-bottom: 3px solid orange !important;
+}
+
+.registr:hover {
+    padding: 8px;
 }
 
 
@@ -269,8 +274,8 @@ hr {
 @media screen and (max-width: 662px) {
     .menu_active {
         transition: 0.2s;
-        width: 40%;
-        transform: translateX(150%);
+        width: 35%;
+        transform: translateX(190%);
     }
 }
 
@@ -300,11 +305,16 @@ hr {
 }
 
 .menu-right {
+    font-size: 1.45vw;
     color: white;
-    font-weight: 600;
     padding: 15px 65px 0 0;
     width: 100%;
     text-align: start;
+}
+@media screen and (max-width: 575px) {
+    .menu-right {
+        font-size: 1.7vw;
+    }
 }
 
 .menu-list {
@@ -316,8 +326,12 @@ hr {
 .menu-list a {
     color: white;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 600;
+}
+
+.menu-right:hover {
+    margin-left: -40px;
+    padding-left: 20px;
+    color:orange;
 }
 
 footer {
