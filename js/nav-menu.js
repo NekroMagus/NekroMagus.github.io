@@ -4,6 +4,12 @@ $('.menu-btn').on('click', function (e) {
     $('.menu').toggleClass('content_active');
 });
 
+function hideNav() {
+    changeNav();
+    $('.menu').toggleClass('menu_active');
+    $('.menu').toggleClass('content_active');
+}
+
 $(window).scroll(function () {
     let image = document.getElementById('imagine').getAttribute('src');
     if (image === 'img/bmw.png') {
