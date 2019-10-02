@@ -405,11 +405,6 @@ footer {
     }
 }
 
-.link-mobile {
-    height: 395px;
-    width: 395px;
-}
-
 .link-mobile:hover {
     z-index: 1;
     transform: translate3d(0, 0, 50px);
@@ -427,13 +422,10 @@ footer {
     transition: 0.13s;
 }
 
-
-
 .link-mobile {
     height: 100%;
     width: 100%;
 }
-
 
 .footer-icon {
     position: absolute;
