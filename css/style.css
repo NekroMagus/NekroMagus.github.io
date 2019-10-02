@@ -375,9 +375,16 @@ footer {
 .links {
     height: 395px;
     width: 395px;
-    background: url("../img/ph2.png") no-repeat;
+    background: url("../img/ph.png") no-repeat;
     background-size: cover;
     z-index: 5;
+}
+
+.link-mobile {
+    box-shadow: 0 0 0 black;
+    height: 100%;
+    width: 100%;
+    transform: translate3d(0, 0, 30px);
 }
 
 @media screen and (max-width: 991px) {
@@ -385,13 +392,8 @@ footer {
         display: block !important;
         margin: auto !important;
         text-align: center !important;
-        height: 60%;
-        width: 60%;
-    }
-
-    .link-mobile {
-        height: 50vh;
-        width: 50vw;
+        height: 70%;
+        width: 70%;
     }
 
     .text-what {
@@ -407,17 +409,7 @@ footer {
     }
 }
 
-.link-mobile:hover {
-    z-index: 1;
-    transform: translate3d(0, 0, 50px);
-}
-
-.hover3d {
-    width:395px;
-}
-
 .hover3d-child {
-    width:395px;
     transition: 0.5s;
 }
 
@@ -429,11 +421,6 @@ footer {
     transition: 0.13s;
 }
 
-.link-mobile {
-    box-shadow: 0 0 0 black;
-    height: 100%;
-    width: 100%;
-}
 
 .footer-icon {
     position: absolute;
