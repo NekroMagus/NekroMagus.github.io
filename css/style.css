@@ -28,6 +28,8 @@ header {
     text-align: center;
     height: 92vh;
     width: 50vw;
+    transition: 0.13s;
+    box-shadow: 0 0 0 black;
 }
 
 @media screen and (max-width: 576px) {
@@ -410,7 +412,12 @@ footer {
     transform: translate3d(0, 0, 50px);
 }
 
+.hover3d {
+    width:395px;
+}
+
 .hover3d-child {
+    width:395px;
     transition: 0.5s;
 }
 
@@ -423,6 +430,7 @@ footer {
 }
 
 .link-mobile {
+    box-shadow: 0 0 0 black;
     height: 100%;
     width: 100%;
 }
