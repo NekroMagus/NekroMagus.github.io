@@ -52,27 +52,30 @@ header {
         height: 4.8vw;
     }
 }
+
 @media screen and (max-width: 1180px) {
     .navbar {
         height: 5vw;
     }
 }
+
 @media screen and (max-width: 1070px) {
     .navbar {
         height: 5.3vw;
     }
 }
+
 @media screen and (max-width: 992px) {
     .navbar {
         height: 5.55vw;
     }
 }
+
 @media screen and (max-width: 900px) {
     .navbar {
         height: 6vw;
     }
 }
-
 
 
 @media screen and (max-width: 440px) {
@@ -109,6 +112,7 @@ li {
         height: 4.8vw;
     }
 }
+
 .nav-link {
     color: white !important;
 }
@@ -117,13 +121,13 @@ li {
     transform: translateY(5%);
     border-bottom: 3px solid white;
 }
+
 @media screen and (max-width: 849px) {
     .nav-link:hover {
         transform: translateY(15%);
         border-bottom: 2px solid white !important;
     }
 }
-
 
 
 .registr {
@@ -311,6 +315,7 @@ hr {
     width: 100%;
     text-align: start;
 }
+
 @media screen and (max-width: 575px) {
     .menu-right {
         font-size: 1.7vw;
@@ -329,7 +334,7 @@ hr {
 }
 
 .menu-right:hover {
-    color:orange;
+    color: orange;
 }
 
 footer {
@@ -368,6 +373,9 @@ footer {
 .links {
     height: 395px;
     width: 395px;
+    background: url("../img/ph2.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 5;
 }
 
 @media screen and (max-width: 991px) {
@@ -375,6 +383,11 @@ footer {
         display: block !important;
         margin: auto !important;
         text-align: center !important;
+        height: 80%;
+        width: 80%;
+    }
+
+    .link-mobile {
         height: 80%;
         width: 80%;
     }
@@ -391,6 +404,29 @@ footer {
         text-align: center;
     }
 }
+
+.link-mobile {
+    height: 395px;
+    width: 395px;
+    padding:15px;
+}
+
+.link-mobile:hover {
+    z-index: 1;
+    transform: translate3d(0, 0, 50px);
+}
+
+.hover3d-child {
+    transition: 0.5s;
+}
+
+.hover3d-child:hover {
+    transition: 0.13s;
+}
+.hover3d:hover {
+    transition: 0.13s;
+}
+
 
 
 .footer-icon {
