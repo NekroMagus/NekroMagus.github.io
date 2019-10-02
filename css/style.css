@@ -29,6 +29,8 @@ header {
     height: 92vh;
     width: 50vw;
     transition: 0.13s;
+    -webkit-transition: 0.13s;
+    -o-transition: 0.13s;
     box-shadow: 0 0 0 black;
 }
 
@@ -268,17 +270,23 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
     transform: translateX(1100%);
 }
 
 .menu_active {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.2s;
     transform: translateX(400%);
 }
 
 @media screen and (max-width: 692px) {
     .menu_active {
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
         transition: 0.2s;
         width: 35%;
         transform: translateX(190%);
@@ -410,14 +418,20 @@ footer {
 }
 
 .hover3d-child {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 .hover3d-child:hover {
+    -webkit-transition: 0.13s;
+    -o-transition: 0.13s;
     transition: 0.13s;
 }
 
 .hover3d:hover {
+    -webkit-transition: 0.13s;
+    -o-transition: 0.13s;
     transition: 0.13s;
 }
 
