@@ -1,68 +1,67 @@
 $('.menu-btn').on('click', function (e) {
-    e.preventDefault();
+     e.preventDefault();
     $('.menu').toggleClass('menu_active');
     $('.menu').toggleClass('content_active');
 });
 
 $(window).scroll(function () {
     let image = document.getElementById('imagine').getAttribute('src');
-    if(image==='img/bmw.png') {
+    if (image === 'img/bmw.png') {
         return;
     }
     if ($(document).scrollTop() > 70) {
         $(".menu-btn").show();
-        $(".menu-btn2").hide();
     } else {
-        $(".menu-btn2").show();
         $(".menu-btn").hide();
     }
 });
 
 $(document).ready(function () {
-    $(".menu-btn").hide();
+    if ($(document).scrollTop() < 70) {
+        $(".menu-btn").hide();
+    }
 });
 
-let i = 0;
 let array = ['img/bm.png', 'img/bmw.png'];
 
 function changeNav() {
-    if (i !== array.length - 1) {
-        i++;
+    let current = document.getElementById('imagine').getAttribute('src');
+    if (current === 'img/bm.png') {
+        document.getElementById('imagine').src = array[1];
     } else {
-        i = 0;
+        document.getElementById('imagine').src = array[0];
     }
-    document.getElementById('imagine').src = array[i];
 }
 
 
-$(window).scroll(function (){
-    $('.mov-right').each(function (){
+$(window).scroll(function () {
+    $('.mov-right').each(function () {
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+350) {
+        if (imagePos < topOfWindow + 550) {
             $(this).addClass('fadeInRight');
         }
     });
 });
 
 
-$(window).scroll(function (){
-    $('.mov-left').each(function (){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+350) {
+$(window).scroll(function () {
+    $('.mov-left').each(function () {
+        let imagePos = $(this).offset().top;
+        let topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 550) {
             $(this).addClass('fadeInLeft');
         }
     });
 });
 
 
-$(window).scroll(function (){
-    $('.mov-up').each(function (){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+350) {
-            $(this).addClass('fadeInUp  ');
+$(window).scroll(function () {
+    $('.mov-up').each(function () {
+        let imagePos = $(this).offset().top;
+        let topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 550) {
+            $(this).addClass('fadeInUp');
         }
     });
 });
