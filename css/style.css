@@ -270,24 +270,24 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.4s;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
-    transition: 0.4s;
     transform: translateX(1100%);
 }
 
 .menu_active {
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
     transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transform: translateX(400%);
 }
 
 @media screen and (max-width: 692px) {
     .menu_active {
+        transition: 0.2s;
         -webkit-transition: 0.2s;
         -o-transition: 0.2s;
-        transition: 0.2s;
         width: 35%;
         transform: translateX(190%);
     }
@@ -385,13 +385,17 @@ footer {
     width: 395px;
     background: url("../img/ph.png") no-repeat;
     background-size: cover;
-    z-index: 5;
+    transform-style: preserve-3d;
 }
 
 .link-mobile {
+    transform-style: preserve-3d;
     box-shadow: 0 0 0 black;
     height: 100%;
     width: 100%;
+
+    -o-transform: translateZ(30px);
+    -webkit-transform: translate3d(0, 0, 30px);
     transform: translate3d(0, 0, 30px);
 }
 
@@ -418,23 +422,10 @@ footer {
 }
 
 .hover3d-child {
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-
-.hover3d-child:hover {
     -webkit-transition: 0.13s;
     -o-transition: 0.13s;
     transition: 0.13s;
 }
-
-.hover3d:hover {
-    -webkit-transition: 0.13s;
-    -o-transition: 0.13s;
-    transition: 0.13s;
-}
-
 
 .footer-icon {
     position: absolute;

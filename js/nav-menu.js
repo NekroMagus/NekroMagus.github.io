@@ -1,13 +1,10 @@
-$('.menu-btn').on('click', function (e) {
-     e.preventDefault();
+$('.menu-btn').on('click', function () {
     $('.menu').toggleClass('menu_active');
-    $('.menu').toggleClass('content_active');
 });
 
 function hideNav() {
     changeNav();
     $('.menu').toggleClass('menu_active');
-    $('.menu').toggleClass('content_active');
 }
 
 $(window).scroll(function () {
