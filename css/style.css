@@ -665,37 +665,32 @@ footer {
 }
 
 .menu-icon {
-    text-align: center;
-    margin:10px;
+    text-align: start;
 }
 
 .right-icon {
     width: 40px;
     height: 40px;
-    margin: 10px;
+    margin: 10px 20px 10px 10px;
 }
 
 .right-icon-vk {
     width: 60px;
     height: 60px;
-    margin: 10px;
+    margin: 10px 10px 10px 0;
 }
 
 @media screen and (max-width: 700px) {
-    .menu-icon {
-        text-align: justify;
-    }
-
     .right-icon {
         width: 30px;
         height: 30px;
-        margin: 7px;
+        margin: 7px 14px 7px 7px;
     }
 
     .right-icon-vk {
         width: 40px;
         height: 40px;
-        margin: 3px;
+        margin: 3px 10px 3px 3px;
     }
 }
 
