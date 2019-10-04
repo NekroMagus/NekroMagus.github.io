@@ -152,7 +152,10 @@ li {
     position: fixed;
     bottom: 5%;
     right: 5%;
-    z-index: 999;
+    z-index: 50;
+}
+.button-up-hide {
+    display: none;
 }
 
 .button-up > a > img {
@@ -277,6 +280,7 @@ hr {
 }
 
 .menu_active {
+    z-index: 90;
     transition: 0.2s;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
@@ -349,6 +353,7 @@ hr {
 }
 
 .menu-right {
+    z-index: 999;
     font-size: 1.45vw;
     color: white;
     padding: 15px 65px 0 0;
