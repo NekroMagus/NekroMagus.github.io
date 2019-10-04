@@ -1,41 +1,29 @@
 $('.menu-btn').on('click', function () {
     $('.menu').toggleClass('menu_active');
+    $('.menu-btn').toggleClass('menu-btn-white');
 });
 
 function hideNav() {
-    changeNav();
+    $('.menu-btn').toggleClass('menu-btn-white');
     $('.menu').toggleClass('menu_active');
 }
 
 $(window).scroll(function () {
-    let image = document.getElementById('imagine').getAttribute('src');
-    if (image === 'img/bmw.png') {
-        return;
-    }
     if ($(document).scrollTop() > 70) {
         $(".menu-btn").show();
+        $('.button-up').show();
     } else {
         $(".menu-btn").hide();
+        $('.button-up').hide();
     }
 });
 
 $(document).ready(function () {
     if ($(document).scrollTop() < 70) {
         $(".menu-btn").hide();
+        $('.button-up').hide();
     }
 });
-
-let array = ['img/bm.png', 'img/bmw.png'];
-
-function changeNav() {
-    let current = document.getElementById('imagine').getAttribute('src');
-    if (current === 'img/bm.png') {
-        document.getElementById('imagine').src = array[1];
-    } else {
-        document.getElementById('imagine').src = array[0];
-    }
-}
-
 
 $(window).scroll(function () {
     $('.mov-right').each(function () {
