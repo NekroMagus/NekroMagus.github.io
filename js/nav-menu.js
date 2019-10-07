@@ -46,7 +46,6 @@ $(window).scroll(function () {
     });
 });
 
-
 $(window).scroll(function () {
     $('.mov-up').each(function () {
         let imagePos = $(this).offset().top;

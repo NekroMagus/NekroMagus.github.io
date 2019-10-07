@@ -138,7 +138,7 @@ li {
 
 .registr {
     padding-bottom: 11px;
-    border-bottom: 3px solid orange !important;
+    border-bottom: 3px solid yellow !important;
 }
 
 .registr:hover {
@@ -237,18 +237,25 @@ hr {
     margin: 80px 0;
 }
 
-.form-button {
-    padding: 0.5rem 0.5rem;
-    text-align: center;
-    color: white;
-    background: url("../img/button.png") no-repeat;
-    background-size: 100% 100%;
-    margin-top: 30px;
-
+.registration {
+    background: url("../img/registratsia.png") no-repeat;
+    background-size: cover;
 }
 
-.form-button:hover {
-    color: white;
+.form-button {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 800px){
+   .img-registr {
+       width: 80%;
+   }
+    .form-button {
+        width: 80%;
+    }
+
 }
 
 .form-button:active {
