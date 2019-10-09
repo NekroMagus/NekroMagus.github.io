@@ -55,3 +55,11 @@ $(window).scroll(function () {
         }
     });
 });
+
+function buttonHover() {
+    $('.header-button-left-back').addClass('hover-button');
+}
+
+function buttonHoverOut() {
+    $('.header-button-left-back').removeClass('hover-button');
+}

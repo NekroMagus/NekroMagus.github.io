@@ -2,9 +2,17 @@ html {
     overflow-x: hidden;
 }
 
+a {
+    color:white;
+}
+
+a:hover {
+    color:white;
+    text-decoration: none;
+}
+
 body {
     font-family: 'HeliosC', sans-serif !important;
-    background: white no-repeat;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -23,11 +31,44 @@ header {
     height: 100vh;
 }
 
+
+
+.header-button-left {
+    z-index: 10;
+    position:absolute;
+    top:50%;
+    left:4%;
+    height:10%;
+    width: 20%;
+    background-color: deeppink;
+    font-size: 2vw;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 2vw;
+    padding: 1%;
+}
+.header-button-left-back {
+    z-index: 9;
+    position:absolute;
+    top:50%;
+    left:4%;
+    height:10%;
+    width: 20%;
+    font-size: 1.2vw;
+    border-radius: 2vw;
+    background-color: royalblue;
+    padding: 3% 1% 0 1%;
+    transition: 0.3s;
+    text-align: center;
+}
+.hover-button {
+    transform: translateY(40px);
+}
+
 .header-logo {
     z-index: 500;
     display: block;
-    margin: auto;
-    text-align: center;
+    margin:auto;
     height: 92vh;
     width: 50vw;
     transition: 0.13s;
@@ -38,9 +79,18 @@ header {
 
 @media screen and (max-width: 576px) {
     .header-logo {
+        margin: -10vw 25vw 2vw 25vw;
         width: 60vh;
         height: 90vh;
     }
+    .header-button-left-back {
+        display: none;
+    }
+
+    .header-button-left {
+        display: none;
+    }
+
 }
 
 .navbar {
