@@ -13,9 +13,6 @@ a:hover {
 
 body {
     font-family: 'HeliosC', sans-serif !important;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
 }
 
 h3 {
@@ -109,6 +106,9 @@ header {
 }
 
 @media screen and (max-width: 576px) {
+    header {
+        height: 110vh;
+    }
     .header-logo {
         margin: -10vw 25vw 2vw 25vw;
         width: 60vh;
@@ -284,7 +284,9 @@ li {
 .heading {
     text-align: center;
     font-size: 70px;
-    color: #8C52FF;
+    background: linear-gradient(#990066, #660099);
+    -webkit-background-clip: text;
+    color: transparent;
     padding-top: 50px;
     padding-bottom: 50px;
 }
