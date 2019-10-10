@@ -1,3 +1,3 @@
 # NekroMagus.github.io
 
-designtime.tech
+designtime.tech - домен этой работы
