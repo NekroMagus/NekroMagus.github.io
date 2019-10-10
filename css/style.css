@@ -1025,5 +1025,10 @@ circle {
         font-size:14px;
         letter-spacing: 1px;
     }
+}
 
+@media screen and (max-width:767px) {
+    .program-right {
+        width:100%;
+    }
 }
