@@ -63,3 +63,11 @@ function buttonHover() {
 function buttonHoverOut() {
     $('.header-button-left-back').removeClass('hover-button');
 }
+
+function buttonHoverRight() {
+    $('.header-button-right-back').addClass('hover-button');
+}
+
+function buttonHoverOutRight() {
+    $('.header-button-right-back').removeClass('hover-button');
+}
