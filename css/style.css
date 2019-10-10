@@ -1006,3 +1006,24 @@ circle {
     font-weight: 400;
     color:#8C52FF;
 }
+
+@media screen and (max-width:991px) {
+    .program-left-header{
+        margin-left:50px;
+        line-height: 40px;
+    }
+
+    .program-left-header-design {
+        margin-left:50px;
+    }
+    .time-program-right {
+        font-size:14px;
+        letter-spacing: 1px;
+    }
+    .time-program-left {
+        padding-left:45px;
+        font-size:14px;
+        letter-spacing: 1px;
+    }
+
+}
