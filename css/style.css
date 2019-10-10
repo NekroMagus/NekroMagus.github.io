@@ -284,7 +284,7 @@ li {
 .heading {
     text-align: center;
     font-size: 70px;
-    color:#8C52FF;
+    color: #8C52FF;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -931,10 +931,11 @@ circle {
         transform: translateY(-3048px);
     }
 }
-@media screen and (max-width:576px){
-.program {
-    display:none;
-}
+
+@media screen and (max-width: 576px) {
+    .program {
+        display: none;
+    }
 }
 
 .img-program {
@@ -953,82 +954,101 @@ circle {
 
 .time-program-left {
     letter-spacing: 2px;
-    padding-left:76px;
+    padding-left: 76px;
     line-height: 14px;
     font-size: 18px;
-    color:white;
+    color: white;
 }
 
 .date-program-left {
-    padding-top:23px;
-    padding-left:76px;
-    font-size:24px;
+    padding-top: 23px;
+    padding-left: 76px;
+    font-size: 24px;
     letter-spacing: 2px;
-    color:white;
+    color: white;
 }
 
 
 .date-program-right {
-    padding-top:26px;
-    padding-left:45px;
-    font-size:24px;
+    padding-top: 26px;
+    padding-left: 45px;
+    font-size: 24px;
     letter-spacing: 2px;
-    color:white;
+    color: white;
 }
 
 .time-program-right {
     letter-spacing: 2px;
-    padding-left:45px;
+    padding-left: 45px;
     line-height: 14px;
     font-size: 18px;
     font-weight: 400;
-    color:white;
+    color: white;
 }
 
 
 .program-right {
     background: url("../img/right-data.png") no-repeat;
     background-size: 100% 100%;
-    margin-top:96px;
+    margin-top: 96px;
     width: 50%;
     height: 443px;
 }
 
-.program-left-header{
-    margin:0;
-    font-size:38px;
+.program-left-header {
+    margin: 0;
+    font-size: 38px;
     font-weight: 600;
-    color:#8C52FF;
-}
-.program-left-header-design {
-    margin:0;
-    font-size:38px;
-    font-weight: 400;
-    color:#8C52FF;
+    color: #8C52FF;
 }
 
-@media screen and (max-width:991px) {
-    .program-left-header{
-        margin-left:50px;
+.program-left-header-design {
+    margin: 0;
+    font-size: 38px;
+    font-weight: 400;
+    color: #8C52FF;
+}
+
+@media screen and (max-width: 1199px) {
+    .date-program-left {
+        padding-left: 45px;
+    }
+
+    .time-program-left {
+        padding-left: 45px;
+    }
+}
+
+@media screen and (max-width: 1038px) {
+    .time-program-left, .time-program-right{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .program-left-header {
+        margin-left: 50px;
         line-height: 40px;
     }
 
     .program-left-header-design {
-        margin-left:50px;
+        margin-left: 50px;
     }
+
     .time-program-right {
-        font-size:14px;
+        font-size: 14px;
         letter-spacing: 1px;
     }
+
     .time-program-left {
-        padding-left:45px;
-        font-size:14px;
+        padding-left: 45px;
+        font-size: 14px;
         letter-spacing: 1px;
     }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
     .program-right {
-        width:100%;
+        width: 100%;
     }
 }
