@@ -71,3 +71,7 @@ function buttonHoverRight() {
 function buttonHoverOutRight() {
     $('.header-button-right-back').removeClass('hover-button');
 }
+
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+});
