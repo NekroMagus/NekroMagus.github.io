@@ -75,3 +75,30 @@ function buttonHoverOutRight() {
 $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
 });
+
+window.onload = function time() {
+    let nowDate = new Date();
+    let hakatonDate = new Date(2019, 10, 16, 0, 0, 0);
+    let result = (hakatonDate - nowDate) + 1000;
+    let elm = document.getElementById('days');
+    if (result < 0) {
+        elm.innerHTML ='осталось ' + '0 дней';
+        return;
+    }
+    let nameDay = [' дня!', ' день!', ' дней!'];
+    let days = Math.floor(result / 1000 / 60 / 60 / 24);
+    let resultDays = days % 100;
+    if (resultDays >= 5 && resultDays <= 20) {
+        elm.innerHTML = 'осталось ' + days + nameDay[2];
+    } else {
+        resultDays = days % 10;
+        if (resultDays === 1) {
+            elm.innerHTML = 'осталось ' + days + nameDay[1];
+        } else if (resultDays >= 2 && resultDays <= 4) {
+            elm.innerHTML = 'осталось ' + days + nameDay[0];
+        } else {
+            elm.innerHTML = 'осталось ' + days + nameDay[2];
+        }
+            }
+
+};
