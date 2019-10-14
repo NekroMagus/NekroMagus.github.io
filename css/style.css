@@ -30,7 +30,7 @@ header {
 
 
 .header-button-left {
-    z-index: 10;
+    z-index: 15;
     position: absolute;
     top: 50%;
     left: 4%;
@@ -45,7 +45,7 @@ header {
 }
 
 .header-button-left-back {
-    z-index: 9;
+    z-index: 5;
     position: absolute;
     top: 50%;
     left: 4%;
