@@ -1,3 +1,5 @@
+@import url('../fonts/NotoSans-Bold.ttf');
+@import url('../fonts/NotoSans-Regular.ttf');
 html {
     overflow-x: hidden;
 }
@@ -12,7 +14,7 @@ a:hover {
 }
 
 body {
-    font-family: 'HeliosC', sans-serif !important;
+    font-family: NotoSans-Regular sans-serif !important;
 }
 
 h3 {
@@ -278,6 +280,7 @@ li {
 }
 
 .heading {
+    font-family: NotoSans-Bold sans-serif;
     text-align: center;
     font-size: 70px;
     background: linear-gradient(#990066, #660099);
