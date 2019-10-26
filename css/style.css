@@ -1,5 +1,17 @@
-@import url('../fonts/NotoSans-Bold.ttf');
-@import url('../fonts/NotoSans-Regular.ttf');
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Robotobold';
+    src: url('../fonts/Robotobold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
 html {
     overflow-x: hidden;
 }
@@ -14,7 +26,7 @@ a:hover {
 }
 
 body {
-    font-family: NotoSans-Regular sans-serif !important;
+    font-family: 'Roboto', sans-serif;
 }
 
 h3 {
@@ -280,7 +292,7 @@ li {
 }
 
 .heading {
-    font-family: NotoSans-Bold sans-serif;
+    font-family: Robotobold, sans-serif;
     text-align: center;
     font-size: 70px;
     background: linear-gradient(#990066, #660099);
@@ -983,7 +995,6 @@ circle {
     padding-left: 45px;
     line-height: 14px;
     font-size: 18px;
-    font-weight: 400;
     color: white;
 }
 
@@ -999,14 +1010,14 @@ circle {
 .program-left-header {
     margin: 0;
     font-size: 38px;
-    font-weight: 600;
+
     color: #8C52FF;
 }
 
 .program-left-header-design {
     margin: 0;
     font-size: 38px;
-    font-weight: 400;
+
     color: #8C52FF;
 }
 
