@@ -6,9 +6,9 @@
 }
 
 @font-face {
-    font-family: 'Robotobold';
-    src: url('../fonts/Robotobold.ttf');
-    font-weight: 700;
+    font-family: 'Robotomedium';
+    src: url('../fonts/Robotomedium.ttf');
+    font-weight: 500 !important;
     font-style: normal;
 }
 
@@ -292,7 +292,7 @@ li {
 }
 
 .heading {
-    font-family: Robotobold, sans-serif;
+    font-family: Robotomedium, sans-serif;
     text-align: center;
     font-size: 70px;
     background: linear-gradient(#990066, #660099);
