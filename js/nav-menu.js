@@ -78,7 +78,7 @@ $('#myModal').on('shown.bs.modal', function () {
 
 window.onload = function time() {
     let nowDate = new Date();
-    let hakatonDate = new Date(2019, 10, 16, 0, 0, 0);
+    let hakatonDate = new Date(2020, 4, 4, 0, 0, 0);
     let result = (hakatonDate - nowDate) + 1000;
     let elm = document.getElementById('days');
     if (result < 0) {
