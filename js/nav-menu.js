@@ -81,23 +81,29 @@ window.onload = function time() {
     let hakatonDate = new Date(2020, 4, 4, 0, 0, 0);
     let result = (hakatonDate - nowDate) + 1000;
     let elm = document.getElementById('days');
+    const day_name = document.getElementById('day-name');
+    elm.className = "bigNumber";
     if (result < 0) {
-        elm.innerHTML ='осталось ' + '0 дней';
+        elm.innerHTML ='0 дней';
         return;
     }
-    let nameDay = [' дня!', ' день!', ' дней!'];
+    let nameDay = [' дня!', ' день', ' дней!'];
     let days = Math.floor(result / 1000 / 60 / 60 / 24);
     let resultDays = days % 100;
     if (resultDays >= 5 && resultDays <= 20) {
-        elm.innerHTML = 'осталось ' + days + nameDay[2];
+        elm.innerHTML = "" + days;
+        day_name.innerHTML = nameDay[2];
     } else {
         resultDays = days % 10;
         if (resultDays === 1) {
-            elm.innerHTML = 'осталось ' + days + nameDay[1];
+            elm.innerHTML = "" + days;
+            day_name.innerHTML = nameDay[1];
         } else if (resultDays >= 2 && resultDays <= 4) {
-            elm.innerHTML = 'осталось ' + days + nameDay[0];
+            elm.innerHTML = "" + days;
+            day_name.innerHTML = nameDay[0];
         } else {
-            elm.innerHTML = 'осталось ' + days + nameDay[2];
+            elm.innerHTML = "" + days;
+            day_name.innerHTML = nameDay[2];
         }
             }
 
