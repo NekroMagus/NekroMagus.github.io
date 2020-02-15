@@ -22,6 +22,11 @@ a {
     color: white;
 }
 
+p {
+    color: #333333;
+    font-size: 20px;
+}
+
 a:hover {
     color: white;
     text-decoration: none;
@@ -201,11 +206,6 @@ li {
     padding-bottom: 50px;
 }
 
-p {
-    color: #333333;
-    font-size: 20px;
-}
-
 .text {
     text-align: center;
     font-weight: 300;
@@ -220,15 +220,11 @@ p {
 
 @media screen and (max-width: 500px) {
     p {
-        font-size: 7vw;
+        font-size: 6vw;
     }
 
     .heading {
         font-size: 10vw;
-    }
-
-    .text-dir {
-        font-size: 6vw;
     }
 
     .text {
@@ -254,14 +250,6 @@ hr {
     display: block;
     margin: auto;
     text-align: center;
-}
-
-@media screen and (max-width: 800px) {
-
-}
-
-@media screen and (max-width: 576px) {
-
 }
 
 .menu {
