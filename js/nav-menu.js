@@ -84,10 +84,10 @@ window.onload = function time() {
     const day_name = document.getElementById('day-name');
     elm.className = "bigNumber";
     if (result < 0) {
-        elm.innerHTML ='0 дней';
+        elm.innerHTML ='0 дней осталось';
         return;
     }
-    let nameDay = [' дня!', ' день', ' дней!'];
+    let nameDay = [' дня осталось', ' день остался', ' дней осталось'];
     let days = Math.floor(result / 1000 / 60 / 60 / 24);
     let resultDays = days % 100;
     if (resultDays >= 5 && resultDays <= 20) {

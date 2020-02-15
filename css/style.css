@@ -1,8 +1,13 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto.ttf');
+    font-family: 'RobotoLight';
+    src: url('../fonts/RobotoLight.ttf');
     font-weight: 400;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('../fonts/RedHatDisplay-Bold.ttf');
 }
 
 html {
@@ -10,7 +15,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', RobotoLight, serif;
 }
 
 a {
@@ -23,7 +28,7 @@ a:hover {
 }
 
 span {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 150.69%;
 }
@@ -198,7 +203,7 @@ li {
 
 p {
     color: #333333;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .text {
@@ -439,8 +444,8 @@ footer {
 }
 
 .links {
-    height: 395px;
-    width: 395px;
+    height: 255px;
+    width: 255px;
     background: url("../img/new/pickto.png") no-repeat;
     background-size: cover;
     transform-style: preserve-3d;
@@ -518,7 +523,7 @@ footer {
 }
 
 .margin {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .bg-dark {
@@ -810,17 +815,24 @@ footer {
 }
 
 .what-design {
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 0;
     height: 100%;
-    width: 78%;
+    width: 45%;
 }
 
 .dir-new {
     height: 100%;
-    width: 100%;
+    width: 80%;
     padding-bottom: 50px;
-    padding-right:0;
+    padding-right: 0;
+}
+
+.dir-graphic {
+    height: 100%;
+    width: 50%;
+    padding-bottom: 50px;
+    padding-right: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -830,6 +842,11 @@ footer {
     }
 
     .what-design {
+        height: 100%;
+        width: 100%;
+    }
+
+    .dir-graphic {
         height: 100%;
         width: 100%;
     }
@@ -845,11 +862,16 @@ footer {
         height: 100%;
         width: 100%;
     }
+
+    .dir-graphic {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .dir-motion {
     height: 60%;
-    width: 60%;
+    width: 35%;
     padding-bottom: 50px;
     padding-right: 33px;
 }
@@ -863,35 +885,39 @@ footer {
 
 .dir-3d {
     height: 100%;
-    width: 100%;
+    width: 60%;
     padding-bottom: 50px;
     padding-right: 33px;
 }
 
 .dir-ui {
-    height: 50%;
-    width: 50%;
+    height: 25%;
+    width: 25%;
     padding-bottom: 50px;
     padding-right: 33px;
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
     .dir-new-small {
         height: 100%;
         width: 100%;
     }
+
     .dir-motion {
         height: 100%;
         width: 100%;
     }
+
     .dir-3d {
         height: 60%;
         width: 60%;
     }
+
     .dir-ui {
         height: 80%;
         width: 80%;
     }
+
     .dir-partners {
         height: 100%;
         width: 100%;
@@ -899,8 +925,8 @@ footer {
 }
 
 .start-registration {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
 }
 
 @media screen and (max-width: 768px) {
@@ -912,4 +938,12 @@ footer {
 
 .bigNumber {
     font-size: 160px;
+    font-family: "Red Hat Display", Red Hat Display, serif;
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
 }
