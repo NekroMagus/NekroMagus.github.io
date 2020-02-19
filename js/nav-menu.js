@@ -83,8 +83,9 @@ window.onload = function time() {
     let elm = document.getElementById('days');
     const day_name = document.getElementById('day-name');
     elm.className = "bigNumber";
+    day_name.className = "big";
     if (result < 0) {
-        elm.innerHTML ='0 дней осталось';
+        elm.innerHTML = '0 дней осталось';
         return;
     }
     let nameDay = [' дня осталось', ' день остался', ' дней осталось'];
@@ -105,6 +106,5 @@ window.onload = function time() {
             elm.innerHTML = "" + days;
             day_name.innerHTML = nameDay[2];
         }
-            }
-
+    }
 };

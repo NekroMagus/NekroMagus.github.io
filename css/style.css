@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', RobotoLight, serif;
+    font-family: 'Roboto Light', RobotoLight, serif;
 }
 
 a {
@@ -23,7 +23,7 @@ a {
 }
 
 p {
-    color: #333333;
+    color: #414141;
     font-size: 20px;
 }
 
@@ -33,6 +33,7 @@ a:hover {
 }
 
 span {
+    color: #414141;
     font-size: 20px;
     font-weight: 300;
     line-height: 150.69%;
@@ -68,7 +69,7 @@ header {
     }
 
     .header-logo {
-        margin: -10vw 25vw 2vw 25vw;
+        margin: -10vw 25vw 2vw 20vw;
         width: 60vh;
         height: 90vh;
     }
@@ -76,6 +77,10 @@ header {
 }
 
 @media screen and (max-width: 440px) {
+    header {
+        height: 100vh;
+    }
+
     .header-logo {
         width: 40vh;
         height: 50vh;
@@ -455,8 +460,8 @@ footer {
         display: block !important;
         margin: auto !important;
         text-align: center !important;
-        height: 70%;
-        width: 70%;
+        height: 50%;
+        width: 50%;
     }
 
     .text-dir {
@@ -467,6 +472,13 @@ footer {
         text-align: center;
     }
 
+}
+
+@media screen and (max-width: 767px) {
+    .links {
+        height: 70%;
+        width: 70%;
+    }
 }
 
 .hover3d-child {
@@ -804,123 +816,96 @@ footer {
 
 .what-design {
     padding-top: 70px;
-    padding-bottom: 0;
-    height: 100%;
     width: 45%;
 }
 
 .dir-new {
-    height: 100%;
-    width: 80%;
+    width: 55%;
     padding-bottom: 50px;
-    padding-right: 0;
 }
 
 .dir-graphic {
-    height: 100%;
-    width: 50%;
+    width: 40%;
     padding-bottom: 50px;
-    padding-right: 0;
 }
 
-@media screen and (max-width: 767px) {
-    .dir-new {
-        height: 100%;
-        width: 100%;
-    }
-
-    .what-design {
-        height: 100%;
-        width: 100%;
-    }
-
-    .dir-graphic {
-        height: 100%;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 567px) {
-    .dir-new {
-        height: 100%;
-        width: 100%;
-    }
-
-    .what-design {
-        height: 100%;
-        width: 100%;
-    }
-
-    .dir-graphic {
-        height: 100%;
-        width: 100%;
-    }
-}
 
 .dir-motion {
-    height: 60%;
-    width: 35%;
+    width: 37%;
     padding-bottom: 50px;
-    padding-right: 33px;
 }
 
 .dir-partners {
     height: 70%;
     width: 70%;
     padding-bottom: 50px;
-    padding-right: 33px;
 }
 
 .dir-3d {
-    height: 100%;
-    width: 60%;
+    width: 18%;
     padding-bottom: 50px;
-    padding-right: 33px;
 }
 
 .dir-ui {
-    height: 25%;
     width: 25%;
     padding-bottom: 50px;
-    padding-right: 33px;
 }
 
-@media screen and (max-width: 576px) {
-    .dir-new-small {
-        height: 100%;
+@media screen and (max-width: 991px) {
+    .what-design {
         width: 100%;
     }
-
-    .dir-motion {
-        height: 100%;
-        width: 100%;
-    }
-
-    .dir-3d {
-        height: 60%;
+    .dir-new {
         width: 60%;
     }
 
+    .dir-graphic {
+        width: 50%;
+    }
+
     .dir-ui {
-        height: 80%;
+        width: 30%;
+    }
+    .dir-partners {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .dir-new, .what-design {
+        width: 100%;
+    }
+
+    .info {
         width: 80%;
     }
 
     .dir-partners {
-        height: 100%;
+        width: 100%;
+    }
+
+    .dir-graphic {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .dir-new, .what-design,
+    .dir-new-small, .dir-partners {
         width: 100%;
     }
 }
 
 .start-registration {
-    width: 40%;
-    height: 40%;
+    width: 50%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     .start-registration {
-        width: 80%;
-        height: 80%;
+        width: 100%;
+    }
+    .start-button {
+        width:70%;
     }
 }
 
@@ -929,9 +914,24 @@ footer {
     font-family: "Red Hat Display", Red Hat Display, serif;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
     .container {
         padding-left: 150px;
         padding-right: 150px;
+    }
+}
+
+.big {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .align-ui {
+        text-align: center;
     }
 }
