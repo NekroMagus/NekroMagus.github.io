@@ -91,7 +91,7 @@ window.onload = function time() {
 
 $(document).ready(function () {
     let hour = new Date().getHours();
-    if (hour > 14 || hour < 8) {
+    if (hour => 19 || hour <= 7) {
         $('p').css('color', '#E4E4E4');
         $('body').css('background-color', 'black');
         $('span').css('color','#E4E4E4');
