@@ -855,6 +855,7 @@ footer {
     .what-design {
         width: 100%;
     }
+
     .dir-new {
         width: 60%;
     }
@@ -866,6 +867,7 @@ footer {
     .dir-ui {
         width: 30%;
     }
+
     .dir-partners {
         width: 90%;
     }
@@ -877,7 +879,7 @@ footer {
     }
 
     .info {
-        width: 80%;
+        width: 85%;
     }
 
     .dir-partners {
@@ -894,7 +896,12 @@ footer {
     .dir-new-small, .dir-partners {
         width: 100%;
     }
+    .info {
+        width: 75%;
+    }
 }
+
+
 
 .start-registration {
     width: 50%;
@@ -904,8 +911,9 @@ footer {
     .start-registration {
         width: 100%;
     }
+
     .start-button {
-        width:70%;
+        width: 70%;
     }
 }
 
@@ -934,4 +942,12 @@ footer {
     .align-ui {
         text-align: center;
     }
+}
+
+.circle {
+    border-radius: 30px;
+}
+
+.end-page {
+    margin-bottom: 100px;
 }

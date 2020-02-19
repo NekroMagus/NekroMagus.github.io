@@ -27,8 +27,8 @@ $(document).ready(function () {
 
 $(window).scroll(function () {
     $('.mov-right').each(function () {
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
+        let imagePos = $(this).offset().top;
+        let topOfWindow = $(window).scrollTop();
         if (imagePos < topOfWindow + 650) {
             $(this).addClass('fadeInRight');
         }
@@ -54,26 +54,6 @@ $(window).scroll(function () {
             $(this).addClass('fadeInUp');
         }
     });
-});
-
-function buttonHover() {
-    $('.header-button-left-back').addClass('hover-button');
-}
-
-function buttonHoverOut() {
-    $('.header-button-left-back').removeClass('hover-button');
-}
-
-function buttonHoverRight() {
-    $('.header-button-right-back').addClass('hover-button');
-}
-
-function buttonHoverOutRight() {
-    $('.header-button-right-back').removeClass('hover-button');
-}
-
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
 });
 
 window.onload = function time() {
@@ -108,3 +88,13 @@ window.onload = function time() {
         }
     }
 };
+
+$(document).ready(function () {
+    let hour = new Date().getHours();
+    if (hour > 14 || hour < 8) {
+        $('p').css('color', '#E4E4E4');
+        $('body').css('background-color', 'black');
+        $('span').css('color','#E4E4E4');
+        $('#hackers').attr('src','./img/new/LogoHackersWhite.svg');
+    }
+});
