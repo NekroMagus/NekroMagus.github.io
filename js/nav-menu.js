@@ -97,6 +97,6 @@ $(document).ready(function () {
         $('span').css('color','#E4E4E4');
         $('#hackers').attr('src','./img/new/LogoHackersWhite.svg');
         $('#TK_point').attr('src', './img/new/TK_logo.png');
-        $('#event_2035').attr('src', './img/new/Logo_events_2035_w.png');
+        $('#event2035').attr('src', './img/new/events2035-dark.png');
     }
 });
